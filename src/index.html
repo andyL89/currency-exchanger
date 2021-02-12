@@ -7,8 +7,23 @@
 <body>
   <div class="container">
     <h1>US Dollar Exchange Rate</h1>
-    <label for="countryCode">Enter Country Code:</label>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Countries
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button" value="MXN">Mexico</button>
+        <button class="dropdown-item" type="button" value="GBP">United Kingdom</button>
+        <button class="dropdown-item" type="button" value="JPY">Japan</button>
+        <button class="dropdown-item" type="button" value="AUD">Australia</button>
+        <button class="dropdown-item" type="button" value="ISK">Iceland</button>
+        <button class="dropdown-item" type="button" value="KPW">North Korea</button>
+      </div>
+    </div>
+    <label for="countryCode">Currency Code:</label>
     <input id="countryCode" type="text">
+    <br>
     <button class="btn-success" id="exchangeRate">Get Exchange Rate</button>
     <div class="showErrors"></div>
     <div class="showExchange"></div>

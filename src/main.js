@@ -15,6 +15,8 @@ function getElements(response) {
 }
 
 $(document).ready(function() {
+  $(".dropdown-item")
+
   $("#exchangeRate").click(function() {
     let currencyCode = ($('#countryCode').val());
     CurrencyExchanger.getExchange(currencyCode)
