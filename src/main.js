@@ -5,10 +5,10 @@ import './css/styles.css';
 import CurrencyExchanger from './currency-exchanger.js';
 
 function getElements(response) {
-  if (response) {
-    $('.showExchange').text(`Exchange Rate for ${response.base_code} to ${response.target_code} is ${response.conversion_rate}`);
+  if (response.success) {
+    $('.showExchange').text(` ${response.base_code} to ${response.target_code} = ${response.conversion_result}`);
   } else {
-    $('.showErrors').text(`There was an error: ${response.message}`);
+    $('.showErrors').text(`There was an error: ${response.result}`);
   }
 }
 
@@ -21,6 +21,7 @@ let result = document.querySelector('h3');
 
 $(selection).change(function () {
   result.innerText = selection.options[selection.selectedIndex].value;
+  let amount = $('#dollarAmount').val();
   let currencyCode = result.innerText;
   CurrencyExchanger.getExchange(currencyCode, amount)
     .then(function (response) {

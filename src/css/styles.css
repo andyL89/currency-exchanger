@@ -1,8 +1,19 @@
-#dollarAmount, select {
-  width: 200px;
+#dollarAmount {
+  width: 220px;
   padding: 10px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 100%;
 }
 
 h3 {
