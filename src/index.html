@@ -5,29 +5,38 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" style="text-align: center;">
     <h1>US Dollar Exchange Rate</h1>
+    <select>
+      <option disabled hidden selected>Countries</option>
+      <option value="MXN">Mexico</option>
+      <option value="GBP">United Kingdom</option>
+      <option value="JPY">Japan</option>
+      <option value="AUD">Australia</option>
+      <option value="ISK">Iceland</option>
+      <option value="KPW">North Korea</option>
+    </select>
 
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Countries
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <option class="dropdown-item" type="button" value="MXN">Mexico</option>
-        <option class="dropdown-item" type="button" value="GBP">United Kingdom</option>
-        <option class="dropdown-item" type="button" value="JPY">Japan</option>
-        <option class="dropdown-item" type="button" value="AUD">Australia</option>
-        <option class="dropdown-item" type="button" value="ISK">Iceland</option>
-        <option class="dropdown-item" type="button" value="KPW">North Korea</option>
-      </div>
-    </div>
-    <!-- <label for="countryCode">Currency Code:</label>
-    <input id="countryCode" type="text">
-    <br>
-    <button class="btn-success" id="exchangeRate">Get Exchange Rate</button> -->
-    <div class="showErrors"></div>
     <div class="showExchange"></div>
+    <div class="showErrors"></div>
   </div>
 </body>
 
 </html>
+<!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Countries
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <option class="dropdown-item" type="button" value="MXN">Mexico</option>
+    <option class="dropdown-item" type="button" value="GBP">United Kingdom</option>
+    <option class="dropdown-item" type="button" value="JPY">Japan</option>
+    <option class="dropdown-item" type="button" value="AUD">Australia</option>
+    <option class="dropdown-item" type="button" value="ISK">Iceland</option>
+    <option class="dropdown-item" type="button" value="KPW">North Korea</option>
+  </div>
+</div> -->
+<!-- <label for="countryCode">Currency Code:</label>
+  <input id="countryCode" type="text">
+  <br>
+  <button class="btn-success" id="exchangeRate">Get Exchange Rate</button> -->
