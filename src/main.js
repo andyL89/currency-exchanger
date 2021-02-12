@@ -5,10 +5,11 @@ import './css/styles.css';
 import CurrencyExchanger from './currency-exchanger.js';
 
 function getElements(response) {
-  if (response.success) {
+  if (response.result === "success") {
     $('.showExchange').text(` ${response.base_code} to ${response.target_code} = ${response.conversion_result}`);
   } else {
-    $('.showErrors').text(`There was an error: ${response.result}`);
+    $('.showErrors').text(`There was an error: ${response}`);
+    console.log(response);
   }
 }
 
