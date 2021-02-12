@@ -8,8 +8,7 @@ import CurrencyExchanger from './currency-exchanger.js';
 
 function getElements(response) {
   if (response) {
-    let dollars = parseInt($('#amount').val());
-    $('.showExchange').text(`Exchange Rate for ${response.base_code} is ${response.conversion_rates.KRW * dollars}`);
+    $('.showExchange').text(`Exchange Rate for ${response.base_code} to ${response.target_code} is ${response.conversion_rate}`);
   } else {
     $('.showErrors').text(`There was an error: ${response.message}`);
   }
@@ -17,7 +16,8 @@ function getElements(response) {
 
 $(document).ready(function() {
   $("#exchangeRate").click(function() {
-    CurrencyExchanger.getExchange()
+    let currencyCode = ($('#countryCode').val());
+    CurrencyExchanger.getExchange(currencyCode)
       .then(function(response) {
         getElements(response);
       });
