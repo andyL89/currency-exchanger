@@ -13,13 +13,17 @@ function getElements(response) {
 }
 
 
-
+// selection.addEventListener('change', () => {
+//   result.innerText = selection.options[selection.selectedIndex].value;
+// });
 let selection = document.querySelector('select');
-let result = document.querySelector('h2');
+let result = document.querySelector('h3');
 
-selection.addEventListener('change', () => {
+$(selection).change(function () {
   result.innerText = selection.options[selection.selectedIndex].value;
+  let currencyCode = result.innerText;
+  CurrencyExchanger.getExchange(currencyCode, amount)
+    .then(function (response) {
+      getElements(response);
+    });
 });
-    // CurrencyExchanger.getExchange(currencyCode)
-    //   .then(function(response) {
-    //     getElements(response);

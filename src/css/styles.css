@@ -1,0 +1,11 @@
+#dollarAmount, select {
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  display: none;
+}
+
