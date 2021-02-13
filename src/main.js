@@ -12,10 +12,10 @@ function clearFields() {
 function getElements(response) {
   if (response.result === "success") {
     clearFields();
-    $('.showExchange').text(`${Math.round(response.conversion_result / response.conversion_rate)} ${response.base_code} to ${response.target_code} = ${response.conversion_result}`);
+    $('.showExchange').text(`${Math.round(response.conversion_result / response.conversion_rate)} ${response.base_code} = ${response.conversion_result} ${response.target_code}`);
   } else if (response.result === "error") {
     clearFields();
-    $('.showErrors').text(`There was an error: The North Korean Won is not a recognized currency in the world economy.`);
+    $('.showErrors').text(`Error: The North Korean Won is not a recognized currency in the world economy.`);
     console.log(response);
   }
 }

@@ -1,7 +1,7 @@
 #dollarAmount {
   width: 220px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -9,10 +9,26 @@ select {
   width: 280px;
   padding: 10px;
   margin-top: 10px;
-  margin-bottom: 20px;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+label {
+  font-weight: bold;
+  font-size: large;
+  margin-top: 50px;
+}
+
+.showExchange {
+  font-weight: bold;
+  font-size: large;
+  margin-top: 30px;
 }
 
 h2 {
+  font-weight: bold;
   font-size: 100%;
 }
 
