@@ -22,9 +22,15 @@ label {
 }
 
 .showExchange {
+  color: green;
   font-weight: bold;
-  font-size: large;
+  font-size: 200%;
   margin-top: 30px;
+}
+
+.showErrors {
+  font-size: larger;
+  color: red;
 }
 
 h2 {
@@ -34,5 +40,30 @@ h2 {
 
 h3 {
   display: none;
+}
+
+#getExchange {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(8, 64, 184);
+  background-color: gold;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#getExchange:hover {background-color: rgb(255, 227, 66)}
+
+#getExchange:active {
+  background-color: rgb(255, 227, 66);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
