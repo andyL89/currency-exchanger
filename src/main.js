@@ -16,7 +16,6 @@ function getElements(response) {
   } else if (response.result === "error") {
     clearFields();
     $('.showErrors').text(`ERROR: CURRENCY UNRECOGNIZED`);
-    console.log(response);
   }
 }
 
@@ -31,14 +30,10 @@ $(selection).ready(function () {
     CurrencyExchanger.getExchange(currencyCode, amount)
       .then(function (response) {
         if (amount < 1) {
-          alert("Please enter a valid dollar amount.");
+          clearFields();
+          $('.showErrors').text(`ERROR: PLEASE ENTER VALID DOLLAR AMOUNT`);
         }
         getElements(response);
       });
   });
 });
-
-  // $(document).ready(function () {
-  //   $("#getExchange").click(function () {
-  //     $(".showExchange").show;
-  //   });
