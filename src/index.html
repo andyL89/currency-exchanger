@@ -1,39 +1,47 @@
 <html lang="en-US">
 
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <title>Currency Exchanger</title>
 </head>
 
 <body>
   <div class="container" style="text-align: center;">
-    <h1>US Dollar Exchange Rate</h1>
-    <label for="dollarAmount">US Dollar Amount:</label>
-    <br>
-    <input id="dollarAmount" style=text-align:center type="number" value="1" required>
-
-    <br>
-    <h2>Exchange Rate For:</h2>
-    <select>
-      <option disabled hidden selected>Countries</option>
-      <option value="MXN">Mexican Peso (MXN)</option>
-      <option value="GBP">United Kingdom Pound Sterling (GBP)</option>
-      <option value="JPY">Japanese Yen (JPY)</option>
-      <option value="AUD">Australian Dollar (AUD)</option>
-      <option value="ISK">Icelandic Króna (ISK)</option>
-      <option value="HKD">Hong Kong Dollar (HKD)</option>
-      <option value="INR">Indian Rupee (INR)</option>
-      <option value="NGN">Nigerian Naira (NGN)</option>
-      <option value="THB">Thai Baht (THB)</option>
-      <option value="SEK">Swedish Krona (SEK)</option>
-      <option value="KRW">South Korean Won (KRW)</option>
-      <option value="KPW">North Korean Won (KPW)</option>
-    </select>
-    <h3></h3>
-    <br>
-    <button class="btn-success" id="getExchange">Convert</button>
-
-    <div class="showExchange"></div>
-    <div class="showErrors"></div>
+    <div class="backdrop">
+      <h1>US Dollar Exchange Rate</h1>
+      <label for="dollarAmount">US Dollar Amount:</label>
+      <br>
+      <input id="dollarAmount" style=text-align:center type="number" value="1" required>
+      <br>
+      <h2>Exchange Rate For:</h2>
+      <select>
+        <option disabled hidden selected>Country</option>
+        <option value="AED">UAE Dirham (AED)</option>
+        <option value="AFN">Afghan Afghani (AFN)</option>
+        <option value="ALL">Albanian Lek (ALL)</option>
+        <option value="AMD">Armenian Dram (AMD)</option>
+        <option value="ANG">Netherlands Antillian Guilder (ANG)</option>
+        <option value="AOA">Angolan Kwanza (AOA)</option>
+        <option value="MXN">Mexican Peso (MXN)</option>
+        <option value="GBP">United Kingdom Pound Sterling (GBP)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="AUD">Australian Dollar (AUD)</option>
+        <option value="ISK">Icelandic Króna (ISK)</option>
+        <option value="HKD">Hong Kong Dollar (HKD)</option>
+        <option value="INR">Indian Rupee (INR)</option>
+        <option value="NGN">Nigerian Naira (NGN)</option>
+        <option value="THB">Thai Baht (THB)</option>
+        <option value="SEK">Swedish Krona (SEK)</option>
+        <option value="KRW">South Korean Won (KRW)</option>
+        <option value="KPW">North Korean Won (KPW)</option>
+      </select>
+      <h3></h3>
+      <br>
+      <button class="btn-success" id="getExchange">Convert</button>
+      <div class="showExchange"></div>
+      <div class="showErrors"></div>
+    </div>
   </div>
 </body>
 

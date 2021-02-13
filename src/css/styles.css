@@ -1,43 +1,61 @@
+body {
+  background-image: url("https://res.cloudinary.com/value-penguin/image/upload/c_lfill,dpr_1.0,f_auto,h_1600,q_auto,w_1600/v1/currency_shutterstock_258312164_yhot0f");
+  font-family: 'Roboto Mono', monospace;
+  padding: 120px;
+}
+
+.backdrop {
+  background-color: rgba(255, 255, 255, 0.797);
+  width: 520px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 90px;
+  margin: auto;
+}
+
 #dollarAmount {
+  font-size: larger;
   width: 220px;
-  padding: 10px;
+  padding: 6px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
 select {
   width: 280px;
-  padding: 10px;
+  padding: 11px;
   margin-top: 10px;
 }
 
-h1 {
-  margin-top: 30px;
-}
-
-label {
-  font-weight: bold;
-  font-size: large;
-  margin-top: 50px;
-}
 
 .showExchange {
   font-weight: bold;
-  font-size: 150%;
-  margin-top: 30px;
+  font-size: 220%;
+  margin-top: 60px;
   color: green;
+  font-stretch: semi-expanded;
 }
 
 .showErrors {
   font-weight: bold;
-  font-size: 150%;
-  margin-top: 30px;
+  font-size: 220%;
   color: red;
+}
+
+h1 {
+  font-size: 205%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 130%;
+  margin-top: 40px;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 100%;
+  font-size: 125%;
 }
 
 h3 {
@@ -45,9 +63,9 @@ h3 {
 }
 
 #getExchange {
-  margin-top: 30px;
+  margin-top: 40px;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 15px 15px;
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
@@ -55,17 +73,17 @@ h3 {
   text-decoration: none;
   outline: none;
   color: rgb(8, 64, 184);
-  background-color: gold;
+  background-color: rgb(255, 219, 16);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px rgba(181, 181, 181, 0.913);
 }
 
 #getExchange:hover {background-color: rgb(255, 227, 66)}
 
 #getExchange:active {
   background-color: rgb(255, 227, 66);
-  box-shadow: 0 5px rgb(126, 126, 126);
+  box-shadow: 0 5px rgba(152, 152, 152, 0.92);
   transform: translateY(4px);
 }
 
