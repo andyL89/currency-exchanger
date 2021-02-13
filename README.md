@@ -10,7 +10,6 @@ A webpage that shows the exchange rate of US dollar amounts provided by the user
 
 
 ## *Setup Instructions:*
-
 1. Copy https://github.com/andyL89/currency-exchanger.
 2. Run `$ git clone https://github.com/andyL89/currency-exchanger` in the terminal to add directory to your computer.
 3. Navigate to the top level of the directory.
@@ -36,11 +35,17 @@ A webpage that shows the exchange rate of US dollar amounts provided by the user
 * webpack-cli 3.3.8
 * webpack-dev-server 3.8.0
 
+## *Unsupported Currencies:*
+* Galactican Cubit (BGC)
+* Schrute Buck (DSB)
+* Flinstone Clam (FSC)
+* Lunar Moon Cash (LMC)
+* North Korean Won (KPW)
+* Monopoly Money (MNM)
+* Seaside Sand Dollar (SSD)
 
 ## *Known Bugs:*
-
 1. If dollar amount is "0", user rceives message "NaN USD = undefined 'currency code'" rather than expected error message.
-
 
 ## *License*
 
