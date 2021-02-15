@@ -7,6 +7,15 @@ A webpage that shows the exchange rate of US dollar amounts provided by the user
 
 ## *Tests*
 #### Test 1:
+Describe: CurrencyExchanger()
+Test: Gets data from ExchangeRate API using US dollar amount and target currency-code chosen by user.
+Code: CurrencyExchanger.getExchange(GBP, 1);
+Expect(response.conversion_result).toEqual(0.7226);
+#### Test 2:
+Describe: selection()
+Test: Gets currency-code from chosen country.
+Code: result.innerText = United Kingdom Pound Sterling (GBP);
+Expect(currencyCode).toEqual(GBP);
 
 
 ## *Setup Instructions:*

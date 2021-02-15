@@ -27,6 +27,7 @@ $(selection).ready(function () {
     result.innerText = selection.options[selection.selectedIndex].value;
     let amount = $('#dollarAmount').val();
     let currencyCode = result.innerText;
+    console.log(result.innerText);
     CurrencyExchanger.getExchange(currencyCode, amount)
       .then(function (response) {
         if (amount < 1) {
