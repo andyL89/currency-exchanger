@@ -17,6 +17,16 @@ body {
   margin: auto;
 }
 
+h1 {
+  font-size: 205%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 130%;
+  margin-top: 40px;
+}
+
 #dollarAmount {
   font-size: larger;
   width: 220px;
@@ -25,12 +35,46 @@ body {
   margin-bottom: 20px;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 125%;
+}
+
 select {
   width: 280px;
   padding: 11px;
   margin-top: 12px;
+  cursor: pointer;
 }
 
+#getExchange {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(20, 87, 231);
+  background-color: rgba(255, 219, 16, 0.927);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgba(181, 181, 181, 0.824);
+}
+
+#getExchange:hover {background-color: rgba(255, 227, 66, 0.92)}
+
+#getExchange:active {
+  background-color: rgb(255, 227, 66);
+  box-shadow: 0 5px rgba(152, 152, 152, 0.824);
+  transform: translateY(4px);
+}
+
+h3 {
+  display: none;
+}
 
 .showExchange {
   font-weight: bold;
@@ -46,47 +90,8 @@ select {
   color: red;
 }
 
-h1 {
-  font-size: 205%;
-}
 
-label {
-  font-weight: bold;
-  font-size: 130%;
-  margin-top: 40px;
-}
 
-h2 {
-  font-weight: bold;
-  font-size: 125%;
-}
 
-h3 {
-  display: none;
-}
 
-#getExchange {
-  margin-top: 40px;
-  display: inline-block;
-  padding: 15px 15px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: rgb(20, 87, 231);
-  background-color: rgb(255, 219, 16);
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px rgba(181, 181, 181, 0.913);
-}
-
-#getExchange:hover {background-color: rgb(255, 227, 66)}
-
-#getExchange:active {
-  background-color: rgb(255, 227, 66);
-  box-shadow: 0 5px rgba(152, 152, 152, 0.92);
-  transform: translateY(4px);
-}
 
