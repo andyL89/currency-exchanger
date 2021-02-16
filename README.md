@@ -19,10 +19,17 @@ Expect(currencyCode).toEqual(GBP);
 
 
 ## *Setup Instructions:*
+#### Step 1: Acquire Exchange Rate API Key:
+1. Go to https://exchangerate-api.com in your browser.
+2. Enter email address in the prompt and click `Get Free Key`.
+3. Find your key in the confirmation email sent from ExchangeRate-API.
+#### Step 2: Set Up Environment:
 1. Copy https://github.com/andyL89/currency-exchanger.
 2. Run `$ git clone https://github.com/andyL89/currency-exchanger` in the terminal to add directory to your computer.
 3. Navigate to the top level of the directory.
 4. Install packages locally by running `$ npm install` in the terminal.
+5. Create `.env` file with the command `touch .env` in the terminal.
+6. Add your newly acquired ExchangeRate-API key to the .env file in this format: `API_KEY=(YOUR API KEY)`; omit parenthesis.
 5. Create production environment by running `$ npm run build` in the terminal.
 6. View project in browser by running `$ npm run start`.
 
@@ -43,18 +50,10 @@ Expect(currencyCode).toEqual(GBP);
 * webpack 4.39.3
 * webpack-cli 3.3.8
 * webpack-dev-server 3.8.0
+* ExchangeRate-API
 
 ## *Unsupported Currencies:*
-* Galactican Cubit (BGC)
-* Schrute Buck (DSB)
-* Flinstone Clam (FSC)
-* Lunar Moon Cash (LMC)
 * North Korean Won (KPW)
-* Monopoly Money (MNM)
-* Seaside Sand Dollar (SSD)
-
-## *Known Bugs:*
-1. If dollar amount is "0", user rceives message "NaN USD = undefined 'currency code'" rather than expected error message.
 
 ## *License*
 

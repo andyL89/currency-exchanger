@@ -19,15 +19,13 @@ function getElements(response) {
   }
 }
 
-let selection = document.querySelector('select');
-let result = document.querySelector('h3');
-
-$(selection).ready(function () {
+$(document).ready(function () {
   $("#getExchange").click(function () {
+    let selection = document.querySelector('select');
+    let result = document.querySelector('h3');
     result.innerText = selection.options[selection.selectedIndex].value;
     let amount = $('#dollarAmount').val();
     let currencyCode = result.innerText;
-    console.log(result.innerText);
     CurrencyExchanger.getExchange(currencyCode, amount)
       .then(function (response) {
         if (amount < 1) {

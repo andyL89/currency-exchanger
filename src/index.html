@@ -12,7 +12,7 @@
       <h1>US Dollar Exchange Rate</h1>
       <label for="dollarAmount">US Dollar Amount:</label>
       <br>
-      <input id="dollarAmount" style=text-align:center type="number" value="1" required>
+      <input id="dollarAmount" style=text-align:center type="number" value=1 min=1 onkeydown="if(event.key==='.'){event.preventDefault();}">
       <br>
       <h2>Exchange Rate For:</h2>
       <select>
@@ -31,7 +31,6 @@
         <option value="BBD">Barbados Dollar (BBD)</option>
         <option value="BDT">Bangladeshi Taka (BDT)</option>
         <option value="BGN">Bulgarian Lev (BGN)</option>
-        <option value="BGC">Galactican Cubit (BGC)</option>
         <option value="BHD">Bahraini Dinar (BHD)</option>
         <option value="BIF">Burundian Franc (BIF)</option>
         <option value="BMD">Bermudian Dollar (BMD)</option>
@@ -57,7 +56,6 @@
         <option value="DJF">Djiboutian Franc (DJF)</option>
         <option value="DKK">Danish Krone (DKK)</option>
         <option value="DOP">Dominican Peso (DOP)</option>
-        <option value="DSB">Schrute Buck (DSB)</option>
         <option value="DZD">Algerian Dinar (DZD)</option>
         <option value="EGP">Egyptian Pound (EGP)</option>
         <option value="ERN">Eritrean Nakfa (ERN)</option>
@@ -66,7 +64,6 @@
         <option value="FJD">Fiji Dollar (FJD)</option>
         <option value="FKP">Falkland Islands Pound (FKP)</option>
         <option value="FOK">Faroese Króna (FOK)</option>
-        <option value="FSC">Flinstone Clam (FSC)</option>
         <option value="GBP">United Kingdom Pound Sterling (GBP)</option>
         <option value="GEL">Georgian Lari (GEL)</option>
         <option value="GGP">Guernsey Pound (GGP)</option>
@@ -102,7 +99,6 @@
         <option value="LAK">Lao Kip (LAK)</option>
         <option value="LBP">Lebanese Pound (LBP)</option>
         <option value="LKR">Sri Lanka Rupee (LKR)</option>
-        <option value="LMC">Lunar Moon Cash (LMC)</option>
         <option value="LRD">Liberian Dollar (LRD)</option>
         <option value="LSL">Lesotho Loti (LSL)</option>
         <option value="LYD">Libyan Dinar (LYD)</option>
@@ -111,7 +107,6 @@
         <option value="MGA">Malagasy Ariary (MGA)</option>
         <option value="MKD">Macedonian Denar (MKD)</option>
         <option value="MMK">Burmese Kyat (MMK)</option>
-        <option value="MNM">Monopoly Money (MNM)</option>
         <option value="MNT">Mongolian Tögrög (MNT)</option>
         <option value="MOP">Macanese Pataca (MOP)</option>
         <option value="MRU">Mauritanian Ouguiya (MRU)</option>
@@ -150,7 +145,6 @@
         <option value="SLL">Sierra Leonean Leone (SLL)</option>
         <option value="SOS">Somali Shilling (SOS)</option>
         <option value="SRD">Surinamese Dollar (SRD)</option>
-        <option value="SSD">Seaside Sand Dollar (SSD)</option>
         <option value="SSP">South Sudanese Pound (SSP)</option>
         <option value="STN">São Tomé and Príncipe Dobra (STN)</option>
         <option value="SYP">Syrian Pound (SYP)</option>

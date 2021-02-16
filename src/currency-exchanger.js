@@ -2,7 +2,7 @@ export default class CurrencyExchanger {
   static getExchange(currencyCode, amount) {
     return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${currencyCode}/${amount}`)
       .then(function (response) {
-        if (!response.ok) {
+        if (!response.ok || amount <= 0) {
           throw Error(response.statusText);
         }
         return response.json();
