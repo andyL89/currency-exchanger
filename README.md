@@ -28,7 +28,7 @@ Expect(currencyCode).toEqual(GBP);
 2. Run `$ git clone https://github.com/andyL89/currency-exchanger` in the terminal to add directory to your computer.
 3. Navigate to the top level of the directory.
 4. Install packages locally by running `$ npm install` in the terminal.
-5. Create `.env` file with the command `touch .env` in the terminal.
+5. Create `.env` file with the command `$ touch .env` in the terminal.
 6. Add your newly acquired ExchangeRate-API key to the .env file in this format: `API_KEY=(YOUR API KEY)`; omit parenthesis.
 5. Create production environment by running `$ npm run build` in the terminal.
 6. View project in browser by running `$ npm run start`.
